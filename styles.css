@@ -1,0 +1,181 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/**************************************** end css reset ****************************************/
+
+/* styles variables */
+:root{
+    --orange:hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+h1,button,label{
+    color: var(--white);
+}
+
+p{
+    color:var(--light-grey);
+}
+
+#rating{
+    color: var(--rating);
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    display: grid;
+    max-width: 30em;
+    row-gap: 1em;
+    padding: 2em;
+    background-color: var(--dark-blue);
+    border-radius: 5%;
+    margin-inline: 1em;
+}
+
+#icon{
+    background-color: var(--very-dark-blue);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+
+form{
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+label{
+    background-color: var(--very-dark-blue);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+label:hover{
+    background-color: var(--orange);
+}
+
+input{
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+input:checked + label{
+    background-color: var(--medium-grey);
+}
+
+
+button{
+    background-color: var(--orange);
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.5em;   
+    cursor: pointer;
+}
+
+button:active{
+    background-color: white;
+    color: var(--orange);
+}
+
+
+.attribution {
+    font-size: 11px;
+    color:var(--white);
+}
+
+.attribution a {
+    color: var(--rating)
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (min-width:600px) {
+
+    body{
+        display: grid;
+        place-content: center;
+    }
+
+    
+
+
+    
+}
