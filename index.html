@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
+  <!-- google fonts Overpass 400,700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- script -->
+  <script src="script.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
 
 </head>
 
@@ -36,46 +43,34 @@
     </p>
 
 
-    <form action="">
+    <form action="thankYou.html" >
+      <div id="radio_btns">
+        <div class="radio_btn">
+          <input type="radio" name="radio" id="option_1" value="1" >
+          <label for="option_1">1</label>
+        </div>
+        <div class="radio_btn">
+          <input type="radio" name="radio" id="option_2" value="2">
+          <label for="option_2">2</label>
+        </div>
+        
+        <div class="radio_btn">
+          <input type="radio" name="radio" id="option_3" value="3" checked>
+          <label for="option_3">3</label>
+        </div>
+        <div class="radio_btn">
+          <input type="radio" name="radio" id="option_4" value="4">
+          <label for="option_4">4</label>
+        </div>
+        <div class="radio_btn">
+          <input type="radio" name="radio" id="option_5" value="5" >
+          <label for="option_5">5</label>
+        </div>
+  
+      </div>
       
-      <div class="radio_btn">
-        <input type="radio" name="radio" id="option_1" >
-        <label for="option_1">1</label>
-      </div>
-      <div class="radio_btn">
-        <input type="radio" name="radio" id="option_2">
-        <label for="option_2">2</label>
-      </div>
-      
-      <div class="radio_btn">
-        <input type="radio" name="radio" id="option_3" checked>
-        <label for="option_3">3</label>
-      </div>
-      <div class="radio_btn">
-        <input type="radio" name="radio" id="option_4">
-        <label for="option_4">4</label>
-      </div>
-      <div class="radio_btn">
-        <input type="radio" name="radio" id="option_5" >
-        <label for="option_5">5</label>
-      </div>
+      <button type="submit" >Submit</button>
     </form>
-
-
-    <button type="submit">Submit</button>
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    <!-- You selected out of 5
-
-    Thank you!
-
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
 
   </main>
   <div class="attribution">
